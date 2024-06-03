@@ -9,21 +9,36 @@ import toggle_light from "../../assets/night.png";
 import toggle_dark from "../../assets/day.png";
 import "./NavBar.css";
 
-function NavBar({ theme, setTheme }) {
+function NavBar() {
+  const [theme, setTheme] = useState("light");
   const [sidebarOpen, setSidebarOpen] = useState(false);
 
   const toggleSidebar = () => {
     setSidebarOpen(!sidebarOpen);
   };
 
+  const toggleTheme = () => {
+    const newTheme = theme === "light" ? "dark" : "light";
+    setTheme(newTheme);
+  };
+
   return (
-    <div className="navbar">
+    <div
+      className="navbar"
+      style={{ backgroundColor: theme === "dark" ? "initial" : "white" }}
+    >
       <img
         src={theme === "light" ? logo_light : logo_black}
         alt="logo"
         className="logo"
       />
-      <div className="menu-icon" onClick={toggleSidebar}>
+      <div
+        className="menu-icon"
+        onClick={(e) => {
+          e.stopPropagation();
+          toggleSidebar();
+        }}
+      >
         <img src={sidebarOpen ? closeIcon : menuIcon} alt="menu toggle" />
       </div>
       <div className={`sidebar ${sidebarOpen ? "open" : ""}`}>
@@ -31,7 +46,10 @@ function NavBar({ theme, setTheme }) {
           src={closeIcon}
           alt="close"
           className="close-icon"
-          onClick={toggleSidebar}
+          onClick={(e) => {
+            e.stopPropagation();
+            toggleSidebar();
+          }}
         />
         <ul>
           <li>Home</li>
@@ -48,7 +66,7 @@ function NavBar({ theme, setTheme }) {
         />
       </div>
       <img
-        onClick={setTheme}
+        onClick={toggleTheme}
         src={theme === "light" ? toggle_light : toggle_dark}
         alt="theme toggle"
         className="toggle-icon"
