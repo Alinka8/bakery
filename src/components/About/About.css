@@ -1,0 +1,45 @@
+.about {
+  background: url(../../assets/boba.jpg) no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.about .about-row .box {
+  display: flex;
+  align-items: center;
+  background: white;
+  flex-wrap: wrap;
+}
+
+.about .about-row .box .img {
+  flex: 1 1 45rem;
+}
+.about .about-row .box .img img {
+  width: 100%;
+  padding: 5rem;
+}
+
+.about .about-row .box .content {
+  flex: 1 1 45rem;
+  padding: 2rem;
+}
+.about .about-row .box .content h3 {
+  font-size: 3rem;
+  color: black;
+  text-shadow: var(--box-shadow);
+}
+.about .about-row .box .content p {
+  font-size: 1.6rem;
+  color: black;
+  padding: 1rem 0;
+  line-height: 1.8;
+}
+.about .about-row .box .content a {
+  font-size: 2rem;
+  cursor: pointer;
+  text-decoration: none;
+  color: var(--black);
+}
+.about .about-row .box .content a:hover {
+  color: var(--black);
+  text-shadow: var(--box-shadow);
+}

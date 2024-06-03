@@ -1,0 +1,67 @@
+.home {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background: url(../../assets/macaronies.jpg);
+  background-position: center center;
+}
+.home .homeContent {
+  width: 70%;
+  float: left;
+  padding: 3rem;
+  background-color: #e56e91;
+}
+.home .homeContent h2 {
+  font-size: 7rem;
+  font-weight: bolder;
+  line-height: 7rem;
+  color: var(--black);
+  text-shadow: var(--box-shadow);
+}
+
+.home .homeContent p {
+  font-size: 1.8rem;
+  line-height: 2;
+  margin-bottom: 2rem;
+}
+.home .homeContent .home-btn {
+  height: 3rem;
+}
+.home .homeContent .home-btn button {
+  font-size: 1.5rem;
+  background-color: var(--black);
+  color: #fff;
+  border-radius: 0.7rem;
+  padding: 0.7rem 2.4rem;
+  cursor: pointer;
+  border: 1px solid black;
+  width: 300px;
+}
+.home .homeContent .home-btn button:hover {
+  font-size: 2rem;
+}
+
+@media (max-width: 768px) {
+  .home .homeContent {
+    width: 100%;
+    line-height: 0%;
+  }
+  .home .homeContent h2 {
+    font-size: 4rem;
+  }
+
+  .order-button button {
+    width: 100%;
+    padding: 12px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  h2 {
+    font-size: 24px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+}

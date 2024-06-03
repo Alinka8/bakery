@@ -1,0 +1,145 @@
+.navbar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #fff;
+  padding: 15px 7%;
+  transition: 0.5s;
+}
+.menu-icon {
+  display: none;
+}
+.menu-icon img,
+.close-icon {
+  cursor: pointer;
+  width: 30px;
+}
+
+.close-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: none;
+}
+
+.sidebar.open .close-icon {
+  display: block;
+}
+
+.logo {
+  width: 100px;
+  cursor: pointer;
+}
+ul {
+  flex: 1;
+  list-style: none;
+  text-align: center;
+}
+ul li {
+  display: inline-block;
+  margin: 10px 20px;
+  font-size: 18px;
+  cursor: pointer;
+}
+.toggle-icon {
+  width: 50px;
+  cursor: pointer;
+  margin-left: 40px;
+}
+
+.search-box {
+  display: flex;
+  align-items: center;
+  background: #242424;
+  padding: 10px 20px;
+  border-radius: 50px;
+}
+.search-box input {
+  padding: 6px;
+  background: transparent;
+  border: 0;
+  outline: 0;
+  color: #fff;
+  font-size: 18px;
+  max-width: 200px;
+}
+
+.search-box input::placeholder {
+  color: #fff;
+}
+.search-box img {
+  width: 20px;
+  cursor: pointer;
+}
+
+.dark .navbar {
+  background: #000;
+  color: #fff;
+}
+.dark .search-box {
+  background: #fff;
+}
+.dark .search-box input {
+  color: #222;
+}
+.dark .search-box input::placeholder {
+  color: #222;
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: #fff;
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+  }
+  .sidebar.open {
+    transform: translateX(0);
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  .toggle-icon,
+  .search-box {
+    display: none;
+  }
+
+  .sidebar li {
+    width: 100%;
+    padding: 12px 20px;
+    text-align: left;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  ul li {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin: 10px 0;
+  }
+}
