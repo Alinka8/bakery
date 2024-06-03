@@ -34,7 +34,7 @@ const About = () => {
       >
         <SwiperSlide className="box">
           <div className="img">
-            <img src={boba} alt="" />
+            <img src={boba} alt="boba" />
           </div>
           <div className="content">
             <h3>What makes our boba special?</h3>
@@ -54,7 +54,7 @@ const About = () => {
         </SwiperSlide>
         <SwiperSlide className="box">
           <div className="img">
-            <img src={capcake} alt="" />
+            <img src={capcake} alt="capcake" />
           </div>
           <div className="content">
             <h3>What makes our boba special?</h3>
@@ -66,7 +66,7 @@ const About = () => {
         </SwiperSlide>
         <SwiperSlide className="box">
           <div className="img">
-            <img src={boba} alt="" />
+            <img src={boba} alt="boba" />
           </div>
           <div className="content">
             <h3>What makes our boba special?</h3>

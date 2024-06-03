@@ -17,7 +17,7 @@ const Products = () => {
         <div class="swiper-wrapper">
           <div className="swiper-slide box">
             <div className="img">
-              <img src={cupcake} alt="" />
+              <img src={cupcake} alt="cupcake" />
             </div>
             <div className="product-content">
               <h3>Cupcakes</h3>
@@ -34,7 +34,7 @@ const Products = () => {
           </div>
           <div className=" swiper-slide box">
             <div className="img">
-              <img src={chocolate_pie} alt="" />
+              <img src={chocolate_pie} alt="chocolate_pie" />
             </div>
             <div className="product-content">
               <h3>Chocolate Pie</h3>
@@ -52,7 +52,7 @@ const Products = () => {
 
           <div className=" swiper-slide box">
             <div className="img">
-              <img src={banana_pudding} alt="" />
+              <img src={banana_pudding} alt="banana_pudding" />
             </div>
             <div className="product-content">
               <h3>Banana Pudding</h3>
@@ -75,7 +75,7 @@ const Products = () => {
         <div class="swiper-wrapper">
           <div className="swiper-slide box">
             <div className="img">
-              <img src={macarons} alt="" />
+              <img src={macarons} alt="macarons" />
             </div>
             <div className="product-content">
               <h3>French Macarons</h3>
@@ -92,7 +92,7 @@ const Products = () => {
           </div>
           <div className=" swiper-slide box">
             <div className="img">
-              <img src={doughnuts} alt="" />
+              <img src={doughnuts} alt="doughnuts" />
             </div>
             <div className="product-content">
               <h3>Doughnuts</h3>
@@ -110,7 +110,7 @@ const Products = () => {
 
           <div className=" swiper-slide box">
             <div className="img">
-              <img src={cake} alt="" />
+              <img src={cake} alt="cake" />
             </div>
             <div className="product-content">
               <h3>Strawberry cake</h3>
