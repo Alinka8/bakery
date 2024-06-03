@@ -8,7 +8,7 @@ const HomePage = () => {
         <h2>Trendy desserts</h2>
         <p>Delicious desserts for everyone!</p>
         <div className="home-btn">
-          <a href="#">
+          <a href="#order">
             <button>Order now</button>
           </a>
         </div>
